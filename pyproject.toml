@@ -1,0 +1,14 @@
+[project]
+name = "veridian-mcp-gateway"
+version = "0.1.0"
+description = "MCP gateway exposing the 5 Veridian ADAS validation agents as tools, plus Postgres-backed resources and routing prompts."
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=2.10",
+    "httpx>=0.27",
+    "asyncpg>=0.29",
+    "python-dotenv>=1.0",
+]
+
+[tool.uv]
+package = false
